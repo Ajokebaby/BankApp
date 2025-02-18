@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApp.Api", "WebApp.Api\BankApp.Api.csproj", "{6A3209F5-B9CC-47BF-B651-7BD28852FFFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApp.Domain", "BankApp.Domain\BankApp.Domain.csproj", "{6270B376-7C4E-4B0C-BEA2-9990540DBDD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApp.Infrastructure", "BankApp.Infrastructure\BankApp.Infrastructure.csproj", "{D9B26A0A-9CD6-4B41-95E2-00A197DBF53A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A3209F5-B9CC-47BF-B651-7BD28852FFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3209F5-B9CC-47BF-B651-7BD28852FFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3209F5-B9CC-47BF-B651-7BD28852FFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3209F5-B9CC-47BF-B651-7BD28852FFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6270B376-7C4E-4B0C-BEA2-9990540DBDD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6270B376-7C4E-4B0C-BEA2-9990540DBDD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6270B376-7C4E-4B0C-BEA2-9990540DBDD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6270B376-7C4E-4B0C-BEA2-9990540DBDD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9B26A0A-9CD6-4B41-95E2-00A197DBF53A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B26A0A-9CD6-4B41-95E2-00A197DBF53A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B26A0A-9CD6-4B41-95E2-00A197DBF53A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B26A0A-9CD6-4B41-95E2-00A197DBF53A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
