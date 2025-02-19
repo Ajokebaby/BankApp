@@ -18,7 +18,7 @@ namespace BankApp.Infrastructure
             _accounts = new List<CustomerInformation>
         {
             new CustomerInformation { AccountNumber = "1234589439", AccountName = "Alice", Balance = 10000 },
-            new CustomerInformation { AccountNumber = "0113451945", AccountName = "Bob", Balance = 20000 }
+            new CustomerInformation { AccountNumber = "011345194", AccountName = "Bob", Balance = 20000 }
         };
         }
         public AccountBalanceResponseDto CheckBalance(string accountNumber)
