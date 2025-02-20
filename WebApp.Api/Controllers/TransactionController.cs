@@ -40,7 +40,7 @@ namespace BankApp.Api.Controllers
         public IActionResult GetBalance(string accountNumber)
         {
             var response = _transactionRepository.CheckBalance(accountNumber);
-            if (response != null)
+            if (response.IsSuccess)
                 return Ok(response);
 
             return NotFound(new { Message = "Account not found" });
