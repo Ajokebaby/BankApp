@@ -26,6 +26,14 @@ namespace BankApp.Infrastructure
             var response = new AccountBalanceResponseDto();
             try
             {
+                if (accountNumber.Length != 10)
+                {
+                    response.Balance = null;
+                    response.AccountName = null;
+                    response.Message = "Invalid account number";
+                    return response;
+
+                }
                 var getBalance = _accounts.FirstOrDefault(x => x.AccountNumber == accountNumber);
                 if (getBalance == null)
                 {
@@ -57,7 +65,7 @@ namespace BankApp.Infrastructure
             var response = new TransactionResponseDto();
             try
             {
-                if(request.AccountNumber.Length > 10)
+                if(request.AccountNumber.Length != 10)
                 {
                     response.Message = "Account number should be 10 digit";
                     response.NewBalance = null;
@@ -91,7 +99,7 @@ namespace BankApp.Infrastructure
             var response = new TransactionResponseDto();
             try
             {
-                if (request.AccountNumber.Length > 10)
+                if (request.AccountNumber.Length != 10)
                 {
                     response.Message = "Account number should be 10 digit";
                     response.NewBalance = null;
