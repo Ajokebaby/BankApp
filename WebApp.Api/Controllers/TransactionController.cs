@@ -43,7 +43,7 @@ namespace BankApp.Api.Controllers
             if (response.IsSuccess)
                 return Ok(response);
 
-            return NotFound(new { Message = "Account not found" });
+            return BadRequest(response);
         }
     }
 }
